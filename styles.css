@@ -25,6 +25,35 @@
   font-display: swap;
 }
 
+:root {
+  --primary-lightRed: hsl(0, 100%, 67%);
+  --primary-orangeYellow: hsl(39, 100%, 56%);
+  --primary-greenTeal: hsl(166, 100%, 37%);
+  --primary-cobaltBlue: hsl(234, 85%, 45%);
+  /* Gradients */
+  --light-slateBlue-background: hsl(252, 100%, 67%);
+  --light-royalBlue-background: hsl(241, 81%, 54%);
+  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-grayBlue: hsl(224, 30%, 27%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: "Hanken Grotesk";
+  font-size: 1.8rem;
 }
