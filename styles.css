@@ -56,6 +56,7 @@ body {
   margin: 0;
   font-family: "Hanken Grotesk";
   font-size: 1.8rem;
+  background: var(--pale-blue);
   /* color: var(); */
 }
 
@@ -63,13 +64,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 200vh;
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
+}
+
+h2 {
+  font-weight: 500;
 }
 
 /* buttons */
@@ -81,10 +86,9 @@ h3 {
   font-family: inherit;
   font-size: 1.8rem;
   font-weight: 500;
-  margin: 3rem;
   outline: none;
-  padding: 2rem 0;
-  width: 300px;
+  padding: 1.8rem 0;
+  width: 100%;
 }
 
 .btn--primary {
@@ -106,7 +110,7 @@ h3 {
   background: var(--light-royalBlue-background);
   width: 200px;
   height: 200px;
-  margin: 4rem;
+  margin: 3.5rem 0;
   border-radius: 100%;
 }
 
@@ -170,5 +174,57 @@ h3 {
 @media screen and (min-width: 678px) {
   .grid-1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* card */
+
+.card {
+  box-shadow: 0 0 5px var();
+  min-width: 360px;
+  max-width: 740px;
+  border-radius: 30px;
+  background: var(--white);
+}
+.card__text {
+  margin: 0;
+  font-size: 2.4rem;
+}
+.card__header {
+  background: hsl(241, 81%, 54%, 0.8);
+  padding: 4.1rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.card__header p {
+  opacity: 0.7;
+}
+
+.card__header-message {
+  margin: 1.4rem 0 0 0;
+}
+
+.card__content {
+  padding: 3.9rem;
+}
+
+.card__content-heading {
+  margin-bottom: 2.8rem;
+  color: var(--dark-grayBlue);
+}
+
+.card__content-score {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 677px) {
+  .card__header {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 }

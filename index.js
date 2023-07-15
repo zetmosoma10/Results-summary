@@ -29,7 +29,6 @@ const scoreArr = [
   },
 ];
 
-
 const newScoreArr = scoreArr
   .map((item) => {
     return `<div class="score" style="background-color:${item.background} ;">
@@ -46,5 +45,5 @@ const newScoreArr = scoreArr
   })
   .join("");
 
-const container = document.querySelector(".main");
+const container = document.querySelector(".card__content-score");
 container.innerHTML = newScoreArr;
