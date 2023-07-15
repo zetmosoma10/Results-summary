@@ -59,6 +59,13 @@ body {
   /* color: var(); */
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 h1,
 h2,
 h3 {
@@ -152,4 +159,16 @@ h3 {
 
 .score__value {
   color: var(--dark-grayBlue);
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 678px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
