@@ -57,3 +57,27 @@ body {
   font-family: "Hanken Grotesk";
   font-size: 1.8rem;
 }
+
+/* buttons */
+.btn {
+  border-radius: 35px;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 3rem;
+  outline: none;
+  padding: 2rem 0;
+  width: 300px;
+}
+
+.btn--primary {
+  background: var(--dark-grayBlue);
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--violet-blue-circle);
+}
