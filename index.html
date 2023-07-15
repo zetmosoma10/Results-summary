@@ -13,7 +13,29 @@
   </head>
   <body>
     <main>
-      <div class="grid grid-1x2"></div>
+      <article class="card">
+        <div class="grid grid-1x2">
+          <header class="card__header">
+            <p class="card__text">Your Results</p>
+            <div class="results">
+              <div class="average-points">
+                <span class="results__mark">76</span>
+                <span class="results__overall">of 100</span>
+              </div>
+            </div>
+            <h2>Great</h2>
+            <p>
+              Your performance exceed 65% of the people conducting the test
+              here!
+            </p>
+          </header>
+          <div class="card__content">
+            <h3>Summary</h3>
+            <div class="card__content-score"></div>
+            <button class="btn btn--primary">Continue</button>
+          </div>
+        </div>
+      </article>
     </main>
     <script src="index.js"></script>
   </body>
